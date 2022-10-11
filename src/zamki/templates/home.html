@@ -1,0 +1,58 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% load static %}
+<div>
+    <div id="box">
+        <div id="castles">
+            <figure class = "castles_figure">
+                <img id="zamek" class="castles_style" src="{% static 'images/zamek.jpg' %}" alt="zamek"/>
+                <figcaption>Zamek</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="bastion" class="castles_style" src="{% static 'images/bastion.jpg' %}" alt="bastion"/>
+                <figcaption>Bastion</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="forteca" class="castles_style" src="{% static 'images/forteca.jpg' %}" alt="forteca"/>
+                <figcaption>Forteca</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="inferno" class="castles_style" src="{% static 'images/inferno.jpg' %}" alt="inferno"/>
+                <figcaption>Inferno</figcaption>
+            </figure>
+            <figure class = "castles_figure" >
+                <img id="nekropolia" class="castles_style" src="{% static 'images/nekropolia.jpg' %}" alt="nekropolia"/>
+                <figcaption>Nekropolia</figcaption>
+            </figure>
+            <figure class = "castles_figure" >
+                <img id="lochy" class="castles_style" src="{% static 'images/lochy.jpg' %}" alt="lochy"/>
+                <figcaption>Lochy</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="twierdza" class="castles_style" src="{% static 'images/twierdza.jpg' %}" alt="twierdza"/>
+                <figcaption>Twierdza</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="cytadela" class="castles_style" src="{% static 'images/cytadela.jpg' %}" alt="cytadela"/>
+                <figcaption>Cytadela</figcaption>
+            </figure>
+            <figure class = "castles_figure">
+                <img id="wrotazywiolow" class="castles_style" src="{% static 'images/wrotazywiolow.jpg' %}" alt="wrotazywiolow"/>
+                <figcaption>Wrota Żywiołów</figcaption>
+            </figure>
+            <figure class = "castles_figure" >
+                <img id="przystan" class="castles_style" src="{% static 'images/przystan.jpg' %}" alt="przystan"/>
+                <figcaption>Przystań</figcaption>
+            </figure>
+        </div>
+        <div class="buttons">
+            <button id="draw_id" class="draw">Losuj</button>
+            <button id="result_id" class="result">---</button>
+        </div>
+    </div>
+    <script src="{% static 'js/script_castles.js' %}"></script>
+    <script src="{% static 'js/script_castle_site.js' %}"></script>
+</div>
+
+{% endblock %}

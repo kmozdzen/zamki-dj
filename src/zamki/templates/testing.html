@@ -1,0 +1,23 @@
+{% extends 'main.html'%}
+{% block content%}
+
+{% load static%}
+<div>
+    <div id="heroes_box">
+        {% for name, image, id in names_images_id %}
+        <figure class="heroes">
+            <img id="heroes_{{id}}" class="heroes_style" src="{{image}}" alt="heroes_icons">
+            <figcaption>{{name}}</figcaption>
+        </figure>
+
+        {% endfor %}
+    </div>
+    <div class ="buttons">
+        <button id="draw_heroes_id" class ="draw">Losuj</button>
+    </div>
+    <p id="heroes_amount">{{heroes_amount}}</p>
+    <script src="{% static 'js/script_heroes.js' %}"></script>
+</div>
+
+
+{% endblock %}
